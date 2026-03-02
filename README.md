@@ -1,6 +1,6 @@
 # Networking Fundamentals
 
-Hi 👋  
+Hi 
 This repository contains the networking fundamentals that I have learned while building my foundation in networking and cybersecurity.
 
 I am still learning, so this repository reflects my understanding at a beginner to intermediate level.
