@@ -1,156 +1,184 @@
-# Networking Fundamentals Portfolio 📡
+# Networking Fundamentals
 
-Welcome! 👋  
-This repository documents my **practical and theoretical understanding of Networking Fundamentals**.  
-It reflects what I have **studied, understood, and practiced at a foundational–intermediate level**, with a focus on real-world networking and cybersecurity relevance.
+Hi 👋  
+This repository contains the networking fundamentals that I have learned while building my foundation in networking and cybersecurity.
 
----
-
-## 📌 Table of Contents
-1. Networking Basics  
-2. Network Topologies  
-3. Networking Devices  
-4. IP Addressing, Ports & Protocols  
-5. Data Communication Models  
-6. Routing & Switching  
-7. Network Security Fundamentals  
-8. Tools & Hands-on Exposure  
-9. Learning Progress  
+I am still learning, so this repository reflects my understanding at a beginner to intermediate level.
 
 ---
 
-## 1️⃣ Networking Basics
-- Definition and purpose of computer networks  
-- Why networking is important in cybersecurity  
+## Networking Basics
+- What is a computer network  
+- Why networking is important  
+- How devices communicate in a network  
 - Types of networks:
   - LAN (Local Area Network)
   - WAN (Wide Area Network)
   - MAN (Metropolitan Area Network)
   - PAN (Personal Area Network)
 
-**Key Focus:**  
-Understanding how data moves between systems inside and outside a network.
+---
+
+## Communication Models
+
+### Client-Server Model
+- One system works as a **server** and other systems work as **clients**  
+- Client sends request and server sends response  
+- Server controls data and resources  
+- If server is down, service will not work  
+
+**Examples:**
+- Web browser and web server  
+- Email client and mail server  
 
 ---
 
-## 2️⃣ Network Topologies
-- Star Topology  
-- Bus Topology  
-- Ring Topology  
-- Mesh Topology  
-- Hybrid Topology  
+### Peer-to-Peer (P2P) Model
+- All systems work as both **client and server**  
+- No central server is required  
+- Systems share resources directly with each other  
 
-**Understanding:**  
-- Physical vs Logical topology  
-- How topology impacts performance, scalability, and fault tolerance  
+**Examples:**
+- File sharing between two computers  
+- Small local networks  
 
 ---
 
-## 3️⃣ Networking Devices
-- **Router**
-  - Routes packets between different networks  
-  - Works at Network Layer (Layer 3)
-- **Switch**
-  - Connects devices inside a LAN  
-  - Uses MAC address table  
-- **Hub**
-  - Broadcasts traffic to all ports (no intelligence)  
-- **Access Point**
-  - Extends wireless network access  
-- **Modem**
-  - Converts ISP signal to usable network signal  
+### Client-Server vs Peer-to-Peer
+
+| Client-Server | Peer-to-Peer |
+|--------------|-------------|
+| Central server present | No central server |
+| More secure | Less secure |
+| Easy to manage | Hard to manage |
+| Used in large networks | Used in small networks |
 
 ---
 
-## 4️⃣ IP Addressing, Ports & Protocols
+## Network Topologies
+- Star topology  
+- Bus topology  
+- Ring topology  
+- Mesh topology  
+- Hybrid topology  
 
-### IP Addressing
-- IPv4 & IPv6 basics  
-- Public IP vs Private IP  
-- Private IP ranges:
-  - 10.0.0.0 – 10.255.255.255  
-  - 172.16.0.0 – 172.31.255.255  
-  - 192.168.0.0 – 192.168.255.255  
-- Default Gateway concept  
-- Introduction to Subnetting (network & host separation)
+Topology defines how devices are connected and how data flows in a network.
 
-### MAC Address & ARP
-- MAC address as a hardware identifier  
-- Used at Data Link Layer  
-- ARP resolves IP → MAC mapping inside a LAN  
+---
 
-### Ports
-- Port numbers identify services on a host  
-- Common ports:
-  - HTTP – 80  
-  - HTTPS – 443  
-  - FTP – 21  
-  - SSH – 22  
-  - DNS – 53  
+## Networking Devices
+- **Router** – Connects different networks and routes packets  
+- **Switch** – Connects devices in a LAN using MAC addresses  
+- **Bridge** – Connects two LAN segments and filters traffic  
+- **Hub** – Sends data to all connected devices  
+- **Access Point** – Provides wireless network access  
+- **Modem** – Connects ISP network to the local network  
+
+---
+
+## IP Addressing
+
+### What is an IP Address
+- IP address is a logical address used to identify a device on a network  
+- It helps devices communicate with each other  
+
+### IPv4 and IPv6
+- IPv4 is a 32-bit address  
+- IPv6 is a 128-bit address  
+
+### Public and Private IP
+- Public IP is used on the internet  
+- Private IP is used inside local networks  
+
+Private IP ranges:
+- 10.0.0.0 – 10.255.255.255  
+- 172.16.0.0 – 172.31.255.255  
+- 192.168.0.0 – 192.168.255.255  
+
+---
+
+## IP Address Classes (IPv4)
+
+### Class A
+- Range: 1.0.0.0 – 126.255.255.255  
+- Default Subnet Mask: 255.0.0.0  
+
+### Class B
+- Range: 128.0.0.0 – 191.255.255.255  
+- Default Subnet Mask: 255.255.0.0  
+
+### Class C
+- Range: 192.0.0.0 – 223.255.255.255  
+- Default Subnet Mask: 255.255.255.0  
+
+### Class D
+- Range: 224.0.0.0 – 239.255.255.255  
+- Used for multicast  
+
+### Class E
+- Range: 240.0.0.0 – 255.255.255.255  
+- Used for research and testing  
+
+---
+
+## MAC Address and ARP
+- MAC address is a unique hardware address  
+- Works at Data Link Layer  
+- ARP maps IP address to MAC address  
+
+---
+
+## Ports and Protocols
+
+### Common Ports
+- HTTP – 80  
+- HTTPS – 443  
+- FTP – 21  
+- SSH – 22  
+- DNS – 53  
 
 ### Protocols
-- **TCP**
-  - Reliable, connection-oriented  
-  - Used for web, email, file transfer  
-- **UDP**
-  - Fast, connectionless  
-  - Used for streaming, DNS  
-- **ICMP**
-  - Error reporting and diagnostics  
-  - Used by ping and traceroute  
+- **TCP** – Reliable and connection-oriented  
+- **UDP** – Fast and connectionless  
+- **ICMP** – Error reporting and diagnostics  
 
 ---
 
-## 5️⃣ Data Communication Models
+## Data Communication Models
 
 ### OSI Model (7 Layers)
-1. Physical – Transmission of bits  
-2. Data Link – MAC addressing & frames  
-3. Network – IP addressing & routing  
-4. Transport – TCP/UDP & ports  
-5. Session – Session management  
-6. Presentation – Encryption & formatting  
-7. Application – User-level protocols  
+Physical, Data Link, Network, Transport, Session, Presentation, Application  
 
-### TCP/IP Model (4 Layers)
-- Network Access  
-- Internet  
-- Transport  
-- Application  
+### TCP/IP Model
+Network Access, Internet, Transport, Application  
 
-**Understanding:**  
-Mapping OSI layers to real-world networking tools and protocols.
+These models help me understand how data travels in real networks.
 
 ---
 
-## 6️⃣ Routing & Switching
-- Router vs Switch (Layer-based comparison)  
-- Static Routing vs Dynamic Routing (basic idea)  
-- Routing table fundamentals  
+## Routing and Switching
+- Difference between router and switch  
+- Static and dynamic routing (basic understanding)  
+- Routing table basics  
 - Switch MAC address table  
-- Difference between:
-  - Packet forwarding  
-  - Frame forwarding  
+- Packet forwarding vs frame forwarding  
 
 ---
 
-## 7️⃣ Network Security Fundamentals
+## Network Security Basics
 - HTTP vs HTTPS  
-- Role of encryption in secure communication  
-- Phishing attacks and suspicious links  
-- Firewalls (basic filtering concept)  
+- Importance of encryption  
+- Phishing attacks  
+- Basic firewall concept  
 - Access Control Lists (ACLs)  
 
-**Cybersecurity Angle:**  
-How weak networking concepts can lead to security vulnerabilities.
-
 ---
 
-## 8️⃣ Tools & Hands-on Exposure
+## Tools and Practice
 
-### Networking Commands
+### Commands I have used
 ```bash
-ping 8.8.8.8        # Connectivity testing
-traceroute google.com  # Path analysis
-ipconfig            # Windows IP configuration
-ifconfig / ip a     # Linux network configuration
+ping 8.8.8.8
+traceroute google.com
+ipconfig
+ifconfig
