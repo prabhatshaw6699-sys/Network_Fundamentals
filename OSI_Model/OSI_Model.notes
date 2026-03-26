@@ -1,0 +1,63 @@
+📌 OSI Model
+
+The OSI Model is a conceptual framework that explains how communication happens between two systems over a network.
+It has 7 layers, and each layer has a specific role.
+
+---
+
+🔹 OSI Layers
+
+1. Application Layer
+
+This is the layer where users interact with the network.
+It provides network services to applications.
+
+Examples:
+HTTP, HTTPS, FTP, DNS, SMTP, POP3, IMAP, Telnet, SSH
+
+---
+
+2. Presentation Layer
+
+This layer is responsible for data formatting, encryption, and compression.
+It converts data into a readable format and also decrypts and decompresses data when received.
+
+---
+
+3. Session Layer
+
+This layer manages and maintains sessions (connections) between systems.
+It is responsible for establishing, maintaining, and terminating connections.
+
+---
+
+4. Transport Layer
+
+This layer is responsible for end-to-end data delivery.
+It ensures data is delivered correctly and in order.
+
+Protocols:
+
+- TCP (reliable, connection-oriented)
+- UDP (fast, connectionless, less reliable)
+
+---
+
+5. Network Layer
+
+This layer handles IP addressing and routing.
+It ensures data is sent from source to destination across networks.
+
+---
+
+6. Data Link Layer
+
+This layer works with MAC addresses and handles communication within the same network.
+It is responsible for error detection and frame transmission.
+
+---
+
+7. Physical Layer
+
+This layer deals with physical components like cables, signals, and hardware.
+It is responsible for transmitting raw bits over the network.
