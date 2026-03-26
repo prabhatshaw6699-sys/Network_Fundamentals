@@ -1,11 +1,11 @@
-📌 OSI Model
+OSI Model
 
 The OSI Model is a conceptual framework that explains how communication happens between two systems over a network.
 It has 7 layers, and each layer has a specific role.
 
 ---
 
-🔹 OSI Layers
+OSI Layers
 
 1. Application Layer
 
